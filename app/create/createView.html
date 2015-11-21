@@ -1,0 +1,12 @@
+<div ng-include="'app/shared/navbarView.html'"></div>
+
+
+<div class="container">
+  <form ng-submit="newConversation(data)">
+    <div class="form-group">
+      <label for="question">What question?</label>
+      <input type="text" class="form-control" id="question" ng-model="data.question">
+    </div>
+    <button type="submit" class="btn btn-block btn-primary">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,10 @@
+<div ng-include="'app/shared/navbarView.html'"></div>
+
+<div class="container">
+  <div class="list-group">
+    <a ng-repeat="convo in convos" ng-href="#/main/{{ $index }}" class="list-group-item">
+      <h1>{{ convo.question }}</h1>
+      <h3>Asked by {{ convo.creator }} <small>{{ convo.creatorEmail }}</small></h3>
+    </a>
+  </div>
+</div>
